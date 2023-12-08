@@ -1,6 +1,6 @@
-# serp-dist-client
+# ag-grid-demo
 
-유통 ERP 배분/보충
+ag-grid-demo
 
 # Main ERP Client
 
