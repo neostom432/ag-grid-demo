@@ -1,0 +1,22 @@
+{
+  "extends": ["next/core-web-vitals", "eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "no-console": "warn", // console은 warning
+    "no-empty-pattern": "warn", // console은 warning
+    "react/jsx-curly-brace-presence": [1, { "props": "never", "children": "never" }], // props, children으로 string을 넘기는거면 {} 감싸지 않아도 됨
+    "react/self-closing-comp": [1, { "component": true, "html": true }], // children 없다면 self closing tag로 작성
+    "react-hooks/exhaustive-deps": "off", // 디펜던시 배열에 값 없어도 안띄우도록 warning off
+    "@typescript-eslint/no-unused-vars": [1, { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }], // 사용하지 않는 변수명들 경고
+    "@typescript-eslint/no-explicit-any": "warn", // any 경고
+    "@typescript-eslint/no-empty-function": "warn", // empty 함수 경고
+    "@next/next/no-html-link-for-pages": "error",
+    "@next/next/no-document-import-in-page": "error",
+    "@next/next/no-duplicate-head": "error",
+    "@next/next/no-head-element": "error",
+    "@next/next/no-head-import-in-document": "error",
+    "@next/next/no-img-element": "warn",
+    "no-trailing-spaces": "warn"
+  }
+}
