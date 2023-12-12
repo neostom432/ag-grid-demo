@@ -27,4 +27,4 @@ run package
 ```
 
 local url
-http://localhost:3000/store/management/schedule
+http://localhost:3000
